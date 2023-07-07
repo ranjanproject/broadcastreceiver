@@ -13,7 +13,7 @@ class MainActivity : AppCompatActivity() {
 
         myBroadcastReceiver = MyBroadcastReceiver()
         val intentFilter = IntentFilter()
-        intentFilter.addAction(Intent.ACTION_AIRPLANE_MODE_CHANGED)
+        intentFilter.addAction("MyAction")
 
         registerReceiver(myBroadcastReceiver, intentFilter)
     }
